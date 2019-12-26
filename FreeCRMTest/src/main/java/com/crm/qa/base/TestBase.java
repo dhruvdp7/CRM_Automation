@@ -36,7 +36,6 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
 		}
 
 		driver.manage().window().maximize();
