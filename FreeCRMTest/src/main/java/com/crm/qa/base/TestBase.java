@@ -34,7 +34,7 @@ public class TestBase {
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "/FreeCRMTest/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/CRM/FreeCRMTest/chromedriver");
 			 driver = new ChromeDriver();
 		}
 		
