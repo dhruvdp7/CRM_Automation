@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.crm.qa.util.TestUtil;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -18,7 +18,7 @@ public class TestBase {
 
 	public TestBase() {
 
-		ttry {
+		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
 					System.getProperty("user.dir")
